@@ -1,0 +1,31 @@
+<!-- templates/login.html -->
+
+{% extends 'base.html' %}
+
+
+<a href="javascript:void(0);" onclick="authVK();">Click to authorize</a>
+{% block title %} Sign in {% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-8 mx-auto social-container my-2 order-md-1">
+         <button class="btn btn-danger mb-2">
+            <a href="{% url 'social:begin' 'google-oauth2' %}">Login with Google</a>
+        </button>
+        <button class="btn btn-success  mb-2">
+            <a href="{% url 'social:begin' 'github' %}">Login with GitHub</a>
+        </button>
+        <button class="btn btn-primary mb-2">
+            <a href="{% url 'social:begin' 'facebook' %}">Login with Facebook</a>
+        </button>
+        <button class="btn btn-info mb-2">
+            <a href="#">Login with LinkedIn</a>
+        </button>
+         <button class="btn btn-warning mb-2">
+            <a href="{% url 'social:begin' 'vk-oauth2' %}">Login with VK</a>
+        </button>
+
+    </div>
+</div>
+
+</div>
+{% endblock %}
