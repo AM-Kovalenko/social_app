@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-gi0!+%(l^n&i3yf5*4&djnc3grumgt8y$9^9^+!)p4_(tekelo
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['social-app2.herokuapp.com']
+ALLOWED_HOSTS = ['social-app2.herokuapp.com', 'myapp.com']
 
 
 # Application definition
@@ -158,8 +158,6 @@ SOCIAL_AUTH_FACEBOOK_KEY = '407353711058146'
 SOCIAL_AUTH_FACEBOOK_SECRET ='ac91bc95e4218c15209dbcabe78b3188'
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
 SOCIAL_AUTH_FACEBOOK_API_VERSION = '2.10'
-
-# C
 
 
 # SOCIAL_AUTH_REDIRECT = True
